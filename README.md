@@ -23,7 +23,8 @@ Rev. 5 is a June 2026 literature-and-field update that changed the brief's frami
 3. **Empirical anchor.** The imec–Graphenea 300 mm pilot-CMOS run (graphene EAMs, 50 ± 4 dB/mm across 400 devices, ~15 GHz) is added to Sections 04, 07, 08 and critical-path step 04 as proof that the test-vehicle-with-statistics pattern and per-wafer device populations are producible in a foundry — and as the first dataset with the right shape for the σₛ→KPI construct-validity experiment.
 4. **Materials tier completed.** ISO/TS 9651:2025 (classification) and ISO/TS 23359:2025 (chemical characterization) added to Track A; ISO/AWI TS 23879 and the 2025 *2D Materials* TWA 41 pipeline review added to Section 06.
 5. **Industrial pull with a clock.** Section 09 adds the adoption constituency: CamGraPhIC's €211M Italian state-aid package (EC-approved April 2026; Milan-area pilot line operational 2028), the Graphene Flagship 2D pilot-line MPW expansion, PIXEurope, and Black Semiconductor's acquisition of Applied Nanolayers. A TS that exists before pilot lines qualify suppliers gets adopted by default.
-6. **Repair.** A malformed sentence in Section 03 (rev. 4 HTML bug) was reconstructed.
+6. **Supply/demand geography.** Section 09 also states the asymmetry: CVD film supply and metrology capability are heavily Asian (VAMAS TWA 41 has been co-chaired from NIM China; Japanese and Korean institutes are active in IEC TC 113), but no graphene-photonics foundry line or PDK has been publicly disclosed in the region, so clock-driven Track B demand is currently European. The standard must therefore be globally applicable by design — which the extension framing delivers — and the first-mover window is real but not guaranteed, since a domestic specification written first in any jurisdiction becomes the incumbent an international TS must displace. The absence of an equivalent JIS/KS/GB/T standard could not be verified from open catalogues and is stated as "none publicly disclosed," not as established absence.
+7. **Repair.** A malformed sentence in Section 03 (rev. 4 HTML bug) was reconstructed.
 
 ## Revision history
 
@@ -48,3 +49,4 @@ It is a roadmap argument, not a validated methodology. Explicitly open: post-tra
 ## License
 
 CC0 1.0 Universal. This work is dedicated to the public domain. Reuse, adapt, and republish freely, with or without attribution.
+ 
