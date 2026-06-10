@@ -1,42 +1,50 @@
 # The Ruler Before the Material
 
-**A pre-standardization methodology for qualifying graphene as a photonic device layer.**
+**Standardizing graphene as a photonic device layer: the tier that exists, the tier that doesn't, and the standardized measurand the missing tier extends.**
 
-Standardizing graphene for photonics runs on two coupled tracks: a material tier that the standards bodies have largely built, and a photonic-integration tier that does not yet exist. This brief maps that gap, proposes the measurement-first method to close it, and names the interface that joins the two.
+A pre-standardization working brief. Published as a single-page HTML technical note with automatic dark mode, deployed via GitHub Pages.
 
-**Read the brief:** [rendered document](https://bluebflatminor.github.io/ruler-before-the-material/) (once GitHub Pages is enabled) — or open `index.html` locally. Light/dark themes follow your device setting.
+- **Live page:** `index.html` (GitHub Pages)
+- **Status:** rev. 5 — 10 June 2026
+- **License:** CC0 1.0 Universal — public domain, no rights reserved
 
-## The argument in brief
+---
 
-- **Standardize the measurement first.** You cannot reduce variance you cannot measure the same way twice, so agreed, traceable metrology is the earliest scalable coordination mechanism — even before the material is reproducible. ("Before" means first-class priority, not strict sequence; metrology and process stabilization co-evolve.)
-- **Two coupled tracks.** *Track A* — graphene as a material (the supplier's certificate; largely standardized already). *Track B* — graphene in the photonic stack (the foundry's certificate; the gap). They are joined by an **interface** — an electronic–photonic material passport — where the transfer step also lives, since it is neither a Track A characteristic nor a Track B measurand.
-- **The gap is the optical tier specifically.** Electrical and structural metrology is well underway (IEC TC 113 `62607-6-x`; ISO/TS 21356). No standard yet covers optical loss or σ_s at the operating wavelength.
-- **The portable measurand is the complex sheet optical conductivity** σ_s(λ, E_F, T), reported normalized to modal overlap Γ so it ports across platforms — letting a foundry use its own waveguide geometry as the test vehicle. The standard fixes the *extraction*, not the layout.
+## The argument in four sentences
 
-## What this is — and what it isn't
+Graphene standardization for photonics runs on two coupled tracks: a material tier (IEC TC 113 / ISO TC 229) that largely exists, and a photonic-integration tier — the complex sheet optical conductivity σₛ(λ, E_F, T) at the operating wavelength, Γ-normalized on the integrated stack — that doesn't. The portable measurand already has series precedent: IEC TS 62607-6-10:2021 standardizes complex sheet conductivity extraction at terahertz frequencies, so the proposal is the interband, on-stack extension of an existing 62607-6-x measurand, not the invention of a new one. The measurement *method* can lead the material specification by roughly one development cycle; its *validation* (round-robins, reference materials, the σₛ→KPI link) co-evolves with the material and remains open research. Build the ruler first — by extending the ruler the field already owns.
 
-A pre-standardization working brief describing a methodology. It is **not** a ratified standard and claims **no** committee standing. The hard standardization work — the reference test vehicle, multi-laboratory round-robins, ratification — belongs to the chartered bodies and the national metrology institutes. The aim is to let the argument enter the pre-standardization discourse on its merits, where a chartered party can pick it up.
+## What changed in rev. 5
 
-## Builds on
+Rev. 5 is a June 2026 literature-and-field update that changed the brief's framing, not just its references:
 
-- The NPL-led **VAMAS Technical Working Area 41** interlaboratory comparisons — the proven pipeline this method extends (published in *2D Materials*; the first Raman round-robin cut measurement uncertainty by up to a factor of fifteen).
-- Romagnoli, Sorianello, Koppens, … Ferrari, "Graphene-based integrated photonics for next-generation datacom and telecom," *Nature Reviews Materials* **3**, 392–414 (2018) — the device-requirement anchor Track B normalizes to.
-- The existing material tier: IEC TC 113 (`IEC TS 62607-6-4 / 6-7 / 6-8 / 6-27`, and `6-37` in development) and ISO/TC 229 (`ISO/TS 21356-2`, `ISO/TS 80004-13`).
+1. **The 62607-6-10 reframe (central change).** Rev. 4 treated σₛ as an unstandardized measurand. It isn't: IEC TS 62607-6-10:2021 extracts the frequency-dependent complex sheet conductivity from a THz transmission function, with Drude-fit carrier density and mobility maps. The committee pitch changes from "create a measurand" to "extend a standardized one" — across two changes the brief now states explicitly: intraband (Drude, THz) → interband (1550 nm, Pauli blocking), and bare film → integrated stack (Γ enters).
+2. **Hall correction.** Rev. 4 claimed carrier-density standardization awaited IEC TS 62607-6-37. A Hall-bar method (62607-6-23) is already in the series; 6-37 is the extension in development. The operating-point caution survives in corrected form: a Hall bar is a structure beside the device, not the film in the mode.
+3. **Empirical anchor.** The imec–Graphenea 300 mm pilot-CMOS run (graphene EAMs, 50 ± 4 dB/mm across 400 devices, ~15 GHz) is added to Sections 04, 07, 08 and critical-path step 04 as proof that the test-vehicle-with-statistics pattern and per-wafer device populations are producible in a foundry — and as the first dataset with the right shape for the σₛ→KPI construct-validity experiment.
+4. **Materials tier completed.** ISO/TS 9651:2025 (classification) and ISO/TS 23359:2025 (chemical characterization) added to Track A; ISO/AWI TS 23879 and the 2025 *2D Materials* TWA 41 pipeline review added to Section 06.
+5. **Industrial pull with a clock.** Section 09 adds the adoption constituency: CamGraPhIC's €211M Italian state-aid package (EC-approved April 2026; Milan-area pilot line operational 2028), the Graphene Flagship 2D pilot-line MPW expansion, PIXEurope, and Black Semiconductor's acquisition of Applied Nanolayers. A TS that exists before pilot lines qualify suppliers gets adopted by default.
+6. **Repair.** A malformed sentence in Section 03 (rev. 4 HTML bug) was reconstructed.
 
-## Method and provenance
+## Revision history
 
-Drafted with AI assistance (Claude, Anthropic), disclosed in full. The brief was pressure-tested through several independent AI adversarial-review passes (Perplexity, Gemini, Copilot, DeepSeek, GPT) used as a structural hedge against sycophancy.
+| Rev | Date | Change |
+|-----|------|--------|
+| 5 | 2026-06-10 | 6-10 reframe (extension, not invention); Hall-bar correction; imec empirical anchor; ISO materials tier; industrial-pull section; Section 03 repair |
+| 4 | 2026-06-04 | Red-team demotions: attribution → scaffold, "fix" → "bound" the operating point, Γ-portability → conditional; feasibility pre-studies and construct-validity check added as true gates |
+| 1–3 | 2026-05/06 | Initial two-track framing, measurand definition, committee pathway, critical path |
 
-Those passes hardened the technical claims rather than inflating them — for example: the σ_s relation reframed as perturbative, up to a geometry-dependent constant, with Γ defined by complex modal perturbation theory rather than naive area overlap; Raman demoted to a non-traceable operating-point estimator with a stated laser power-density limit; the metrology/process relationship made explicitly recursive; storage-atmosphere specification and GUM-style uncertainty framing added.
+## Methodology
 
-Specification-grade demands the reviews surfaced — a full interface schema with a worked attribution example, a validity-range / negative case, the exact boundary condition and overlap integral, expanded failure modes — were **deliberately not** forced into the brief. They belong in a future Technical Specification skeleton, kept separate so this stays a scoping document rather than a bloated pseudo-standard.
+This brief follows the same workflow as the rest of this research program: physics-problem framing → drafting in dialogue with an AI system (Claude, Anthropic) → structured multi-AI adversarial review → triage of objections into fold-in / reframe / discard → revision → GitHub Pages deployment. Rev. 5 additionally incorporated a targeted web-literature sweep (standards catalogues, VAMAS/NPL outputs, graphene-photonics industrialization news through June 2026). The adversarial-review posture is the point: claims are demoted when the evidence doesn't carry them, and the provenance block in the document footer records what was demoted and why.
 
-Edition dates and clause content of the cited standards should be verified against current IEC/ISO catalogues before formal citation.
+## What this is not
 
-## Companion
+It is a roadmap argument, not a validated methodology. Explicitly open: post-transfer, in-situ E_F metrology on the finished stack; self-consistent Γ extraction for strongly-perturbed modes; transfer reproducibility (feasibility pre-study step 00); and the σₛ-to-performance link (step 04, the load-bearing experiment). Standards existence and scope were checked against catalogue records and secondary literature; edition dates, scopes (notably 62607-6-23), and clause content should be verified against the IEC/ISO catalogues before formal citation.
 
-*From Nanojoules to Spec Sheets* — the metrology-as-enabling-layer argument this piece extends (separate brief).
+## Companion work
+
+- *From Nanojoules to Spec Sheets* — the metrology-as-enabling-layer argument this brief extends (photonic device integration metrology, IEC TC 113 / VAMAS TWA 41 pipelines).
 
 ## License
 
-Released under **CC0 1.0 Universal** — a public-domain dedication. No rights reserved. Reuse, adapt, translate, and republish freely, with or without attribution. See [`LICENSE`](LICENSE).
+CC0 1.0 Universal. This work is dedicated to the public domain. Reuse, adapt, and republish freely, with or without attribution.
