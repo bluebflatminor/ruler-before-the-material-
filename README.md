@@ -5,7 +5,7 @@
 A pre-standardization working brief. Published as a single-page HTML technical note with automatic dark mode, deployed via GitHub Pages.
 
 - **Live page:** `index.html` (GitHub Pages)
-- **Status:** rev. 5 — 10 June 2026
+- **Status:** rev. 5.1 — 3 July 2026
 - **License:** CC0 1.0 Universal — public domain, no rights reserved
 
 ---
@@ -13,6 +13,14 @@ A pre-standardization working brief. Published as a single-page HTML technical n
 ## The argument in four sentences
 
 Graphene standardization for photonics runs on two coupled tracks: a material tier (IEC TC 113 / ISO TC 229) that largely exists, and a photonic-integration tier — the complex sheet optical conductivity σₛ(λ, E_F, T) at the operating wavelength, Γ-normalized on the integrated stack — that doesn't. The portable measurand already has series precedent: IEC TS 62607-6-10:2021 standardizes complex sheet conductivity extraction at terahertz frequencies, so the proposal is the interband, on-stack extension of an existing 62607-6-x measurand, not the invention of a new one. The measurement *method* can lead the material specification by roughly one development cycle; its *validation* (round-robins, reference materials, the σₛ→KPI link) co-evolves with the material and remains open research. Build the ruler first — by extending the ruler the field already owns.
+
+## What changed in rev. 5.1
+
+Rev. 5.1 is a verification-and-currency pass (3 July 2026). No framing changes.
+
+1. **Hall citation pinned.** The 62607-6-23 edition and scope flagged in rev. 5 as "to be verified" were confirmed against the IEC catalogue: IEC TS 62607-6-23:2025 — carrier mobility and sheet resistance for graphene thin films by Hall measurement (webstore publication 64056). The hedge is removed from the reference list; the operating-point caution (a Hall bar is a structure beside the device, not the film in the mode) stands unchanged.
+2. **New series member added to Track A.** IEC TS 62607-6-24:2026 — graphene layer distribution by optical contrast, non-destructive and high-throughput — published June 2026, after rev. 5. Added to the Section 02 structural tier and the reference list. It does not touch the Track B gap (layer counting, not σₛ at 1550 nm), but it is fresh evidence the 62607-6-x series is still actively absorbing *optical* methods on the material tier.
+3. **Adoption clock sharpened.** Section 09 now records CamGraPhIC's publicly stated first target application — the GPU-to-HBM optical link, competing with Ayar Labs and Lightmatter — making the incoming-material-certificate demand concrete rather than notional.
 
 ## What changed in rev. 5
 
@@ -30,17 +38,18 @@ Rev. 5 is a June 2026 literature-and-field update that changed the brief's frami
 
 | Rev | Date | Change |
 |-----|------|--------|
+| 5.1 | 2026-07-03 | Verification-and-currency pass: 62607-6-23:2025 citation pinned (closes rev. 5's open verification flag); IEC TS 62607-6-24:2026 added to Track A; CamGraPhIC GPU-to-HBM framing added to §09. No framing changes |
 | 5 | 2026-06-10 | 6-10 reframe (extension, not invention); Hall-bar correction; imec empirical anchor; ISO materials tier; industrial-pull section; Section 03 repair |
 | 4 | 2026-06-04 | Red-team demotions: attribution → scaffold, "fix" → "bound" the operating point, Γ-portability → conditional; feasibility pre-studies and construct-validity check added as true gates |
 | 1–3 | 2026-05/06 | Initial two-track framing, measurand definition, committee pathway, critical path |
 
 ## Methodology
 
-This brief follows the same workflow as the rest of this research program: physics-problem framing → drafting in dialogue with an AI system (Claude, Anthropic) → structured multi-AI adversarial review → triage of objections into fold-in / reframe / discard → revision → GitHub Pages deployment. Rev. 5 additionally incorporated a targeted web-literature sweep (standards catalogues, VAMAS/NPL outputs, graphene-photonics industrialization news through June 2026). The adversarial-review posture is the point: claims are demoted when the evidence doesn't carry them, and the provenance block in the document footer records what was demoted and why.
+This brief follows the same workflow as the rest of this research program: physics-problem framing → drafting in dialogue with an AI system (Claude, Anthropic) → structured multi-AI adversarial review → triage of objections into fold-in / reframe / discard → revision → GitHub Pages deployment. Rev. 5 additionally incorporated a targeted web-literature sweep (standards catalogues, VAMAS/NPL outputs, graphene-photonics industrialization news through June 2026); rev. 5.1 repeated that sweep through early July 2026 and closed one of rev. 5's declared verification items. The adversarial-review posture is the point: claims are demoted when the evidence doesn't carry them, and the provenance block in the document footer records what was demoted and why.
 
 ## What this is not
 
-It is a roadmap argument, not a validated methodology. Explicitly open: post-transfer, in-situ E_F metrology on the finished stack; self-consistent Γ extraction for strongly-perturbed modes; transfer reproducibility (feasibility pre-study step 00); and the σₛ-to-performance link (step 04, the load-bearing experiment). Standards existence and scope were checked against catalogue records and secondary literature; edition dates, scopes (notably 62607-6-23), and clause content should be verified against the IEC/ISO catalogues before formal citation.
+It is a roadmap argument, not a validated methodology. Explicitly open: post-transfer, in-situ E_F metrology on the finished stack; self-consistent Γ extraction for strongly-perturbed modes; transfer reproducibility (feasibility pre-study step 00); and the σₛ-to-performance link (step 04, the load-bearing experiment). Standards existence and scope were checked against catalogue records and secondary literature; 62607-6-23:2025 has been verified against the IEC catalogue (rev. 5.1). Remaining pre-citation verification items: the imec–Graphenea *Laser & Photonics Reviews* author list and edition, and the IEC catalogue entry for 62607-6-24:2026 (existence confirmed via secondary standards-tracking coverage; webstore publication ID not yet retrieved).
 
 ## Companion work
 
@@ -49,4 +58,3 @@ It is a roadmap argument, not a validated methodology. Explicitly open: post-tra
 ## License
 
 CC0 1.0 Universal. This work is dedicated to the public domain. Reuse, adapt, and republish freely, with or without attribution.
- 
